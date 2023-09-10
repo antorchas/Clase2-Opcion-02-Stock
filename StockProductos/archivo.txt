@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Juan Jos\u00E9",
+    "apellido": "Villarruel"
+  },
+  {
+    "nombre": "Federico Mart\u00EDn",
+    "apellido": "Arias"
+  },
+  {
+    "nombre": "Maria Alcira",
+    "apellido": "Retondo"
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Gomez"
+  },
+  {
+    "nombre": "Pedro Agust\u00EDn",
+    "apellido": "Coronel"
+  }
+]
