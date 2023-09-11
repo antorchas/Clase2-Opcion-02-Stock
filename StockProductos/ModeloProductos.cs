@@ -12,4 +12,7 @@ namespace StockProductos
         public string tipoOperacion { get; set; }   
         public int cantidad { get; set; }   
     }
+
+
 }
+
