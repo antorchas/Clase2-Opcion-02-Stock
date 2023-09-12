@@ -21,8 +21,9 @@
                 <asp:Label ID="Label1" runat="server" Text="Detalle Producto:"></asp:Label>
             </div>
             <div class="col-sm-9">
-                <asp:TextBox ID="txtDetaleProducto" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDetaleProducto" ValidationGroup="Registro" runat="server"></asp:TextBox>
             </div>
+           
         </div>
         
         <div class="row mt-2">
@@ -30,7 +31,7 @@
                 <asp:Label ID="Label2" runat="server" Text="Fecha de Operación:"></asp:Label>
             </div>
             <div class="col-sm-9">
-                <asp:TextBox type="Date" ID="dtFechaOperacion" runat="server"></asp:TextBox>
+                <asp:TextBox type="Date" ID="dtFechaOperacion" ValidationGroup="Registro" runat="server" OnTextChanged="dtFechaOperacion_TextChanged"></asp:TextBox>
             </div>
         </div>
 
@@ -40,9 +41,9 @@
             </div>
             <div class="col-sm-9">
                 <asp:Label ID="Label4" runat="server" Text="Compra"></asp:Label>
-                <asp:RadioButton ID="rbCompra" runat="server" GroupName="TipoCompra" />
+                <asp:RadioButton ID="rbCompra" runat="server" GroupName="TipoMovimiento" />
                 <asp:Label ID="Label5" runat="server" Text="Venta"></asp:Label>
-                <asp:RadioButton ID="rbVenta" runat="server" GroupName="TipoCompra" />
+                <asp:RadioButton ID="rbVenta" runat="server" Checked="true" GroupName="TipoMovimiento" />
             </div>
         </div>
 
@@ -51,17 +52,30 @@
                 <asp:Label ID="Label6" runat="server" Text="Cantidad:"></asp:Label>
             </div>
             <div class="col-sm-9">
-                <asp:TextBox type="number" ID="txtCantidad" runat="server"></asp:TextBox>
+                <asp:TextBox type="number" ValidationGroup="Registro" ID="txtCantidad" runat="server"></asp:TextBox>
             </div>
         </div>
            <div class="row mt-2">
-       <div class="col-sm-3">
-    
-       </div>
-       <div class="col-sm-9">
-           <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
-       </div>
+                  <div class="col-sm-3">
+
    </div>
+       <div class="col-sm-2">
+           <asp:Button ID="btnRegistrar" type="submit" runat="server" ValidationGroup="Registro" Text="Registrar" OnClick="btnRegistrar_Click" />
+       </div>
+               
+               <div class="col-sm-2">
+       <asp:Button ID="btnMovimientos" runat="server" CausesValidation="false" Text="Ver Movimientos" OnClick="btnMovimientos_Click"  />
+   </div>
+
+   </div>
+                  <div class="row mt-2"> 
+                                       <div class="col-sm-2">
+
+  </div>
+  <div class="col-sm-8">
+      <asp:Label ID="lblInformacion" runat="server" Text=""></asp:Label>
+      </div>
+          </div>
     </div>
 </form>
 
@@ -81,5 +95,6 @@
     margin-bottom: 20px; 
    
 }
+  
 </style>
 

@@ -1,20 +1,20 @@
 [
   {
+    "detalleProducto": "Coca Cola",
+    "fechaOperacion": "11/09/2023",
+    "tipoOperacion": "Compra",
+    "cantidad": 150
+  },
+  {
     "detalleProducto": "Coca Cola Light",
-    "fechaOperacion": "2023-09-13",
+    "fechaOperacion": "11/09/2023",
     "tipoOperacion": "Compra",
-    "cantidad": 20
+    "cantidad": 50
   },
   {
-    "detalleProducto": "Agua Mineral",
-    "fechaOperacion": "2023-09-12",
+    "detalleProducto": "Coca Cola",
+    "fechaOperacion": "12/09/2023",
     "tipoOperacion": "Venta",
-    "cantidad": 5
-  },
-  {
-    "detalleProducto": "Alfajor Tatin",
-    "fechaOperacion": "2023-09-04",
-    "tipoOperacion": "Compra",
-    "cantidad": 25
+    "cantidad": 2
   }
 ]
