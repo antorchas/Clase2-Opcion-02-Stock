@@ -94,7 +94,7 @@ namespace StockProductos
             if (string.IsNullOrEmpty(txtCantidad.Text.Trim()) || Convert.ToInt32(txtCantidad.Text) <=0)
             {
                 lblInformacion.ForeColor = Color.Red;
-                lblInformacion.Text = "El campo cangtidad es Obligatorio o debe ser mayor a 0";
+                lblInformacion.Text = "El campo cantidad es Obligatorio o debe ser mayor a 0";
                 return false;
             }
          
